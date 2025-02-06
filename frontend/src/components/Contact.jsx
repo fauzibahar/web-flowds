@@ -1,5 +1,8 @@
-import { Instagram, Facebook, Twitter } from 'lucide-react';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { IconBrandInstagram } from '@tabler/icons-react';
+import { IconBrandFacebook } from '@tabler/icons-react';
+import { Bounce, toast } from 'react-toastify';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +11,8 @@ const Contact = () => {
     subject: '',
     message: '',
   });
+
+  const form = useRef();
 
   const handleChange = (e) => {
     setFormData({
@@ -19,21 +24,47 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { name, phone, subject, message } = formData;
-
-    // Encode pesan agar aman dalam URL
-    const encodedMessage = encodeURIComponent(
-      `Halo Flowds! Saya ${name} (${phone}) ingin berbicara tentang ${subject}.\n\n${message}`
-    );
-
-    // Nomor WhatsApp tujuan
-    const phoneNumber = '6282211329243'; // Ganti dengan nomor WhatsApp kamu
-
-    // Redirect ke WhatsApp dengan pesan yang sudah diformat
-    window.open(
-      `https://wa.me/${phoneNumber}?text=${encodedMessage}`,
-      '_blank'
-    );
+    emailjs
+      .sendForm(
+        'service_ikytgmd',
+        'template_4cm7mh8',
+        form.current,
+        '5y_UFaCAU3ZBs0Xjk'
+      )
+      .then(
+        () => {
+          setFormData({
+            name: '',
+            phone: '',
+            subject: '',
+            message: '',
+          });
+          toast.success('Message sent successfully!', {
+            position: 'top-center',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'colored',
+            transition: Bounce,
+          });
+        },
+        (error) => {
+          toast.error('Error sending message, please try again!', {
+            position: 'top-center',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'colored',
+            transition: Bounce,
+          });
+        }
+      );
   };
 
   return (
@@ -67,14 +98,14 @@ const Contact = () => {
               Social Media
             </h4>
             <div className="flex gap-5 mt-3">
-              <div className="bg-[#13677A] p-3 rounded-lg hover:outline-1 hover:bg-white text-white hover:text-[#13677A] transition">
-                <a href="#">
-                  <Instagram size={32} />
+              <div className="bg-[#13677A] p-3 rounded-lg transform transition-all duration-300 hover:scale-110 hover:bg-white text-white hover:text-[#13677A] flex items-center justify-center shadow-lg hover:shadow-xl hover:outline-1">
+                <a href="https://www.instagram.com/flowds.id/" target="_blank">
+                  <IconBrandInstagram stroke={2} width={32} height={32} />
                 </a>
               </div>
-              <div className="bg-[#13677A] p-3 rounded-lg hover:outline-1 hover:bg-white text-white hover:text-[#13677A] transition">
-                <a href="#">
-                  <Facebook size={32} />
+              <div className="bg-[#13677A] p-3 rounded-lg transform transition-all duration-300 hover:scale-110 hover:bg-white text-white hover:text-[#13677A] flex items-center justify-center shadow-lg hover:shadow-xl hover:outline-1">
+                <a href="https://www.facebook.com/flowds.id" target="_blank">
+                  <IconBrandFacebook stroke={2} width={32} height={32} />
                 </a>
               </div>
             </div>
@@ -85,7 +116,7 @@ const Contact = () => {
             <h2 className="text-2xl font-bold mb-6 text-center text-gray-900">
               General Enquiries
             </h2>
-            <form className="space-y-5" onSubmit={handleSubmit}>
+            <form ref={form} className="space-y-5" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-gray-700 font-medium mb-1">
                   Nama
@@ -149,7 +180,7 @@ const Contact = () => {
                 type="submit"
                 className="w-full bg-[#13677A] text-white py-3 rounded-lg hover:bg-white hover:text-[#13677A] hover:outline-1 transition font-semibold"
               >
-                Kirim ke WhatsApp
+                Kirim Pesan
               </button>
             </form>
           </div>

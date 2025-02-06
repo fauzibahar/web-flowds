@@ -1,5 +1,5 @@
-import logoLight from '../assets/img/flowdsLight.svg';
-import logoDark from '../assets/img/flowdsDark.svg';
+import logoLight from '../assets/img/logo/flowdsLight.svg';
+import logoDark from '../assets/img/logo/flowdsDark.svg';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
