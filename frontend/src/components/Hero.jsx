@@ -1,3 +1,4 @@
+import heroImage from '../assets/img/flowdsHero.svg';
 const Hero = () => {
   const phoneNumber = '6282210081560';
   const message = encodeURIComponent(
@@ -32,7 +33,7 @@ const Hero = () => {
         {/* Right Content */}
         <div className="flex justify-end lg:w-[60%] w-full">
           <img
-            src="../../src/assets/img/flowds vector web.svg"
+            src={heroImage}
             alt="Team Meeting"
             className="w-full"
             style={{ filter: 'drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.20))' }}
