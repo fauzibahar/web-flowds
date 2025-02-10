@@ -33,7 +33,7 @@ const Portfolio = () => {
           {displayedProjects.map((project, index) => (
             <div
               key={index}
-              className="relative bg-white shadow-lg rounded-lg overflow-hidden group"
+              className="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer group"
             >
               {/* Image dengan efek scale saat hover */}
               <div
@@ -62,7 +62,7 @@ const Portfolio = () => {
         {projects.length > 6 && (
           <div className="text-center mt-8">
             <button
-              className="px-6 py-3 bg-[#13677A] text-white font-semibold rounded-lg hover:bg-white hover:text-[#13677A] hover:outline-1 transition"
+              className="px-6 py-3 bg-[#13677A] text-white font-semibold rounded-lg hover:bg-white hover:text-[#13677A] hover:outline-1 transition cursor-pointer"
               onClick={() => setShowAll(!showAll)}
             >
               {showAll ? 'Tampilkan Lebih Sedikit' : 'Lihat Semua Portfolio'}
@@ -84,7 +84,7 @@ const Portfolio = () => {
               className="w-full h-auto rounded-lg object-contain"
             />
             <button
-              className="absolute top-3 right-3 text-white bg-black/60 rounded-full p-2"
+              className="absolute top-3 right-3 text-white bg-black/60 rounded-lg p-2 cursor-pointer"
               onClick={() => setSelectedImage(null)}
             >
               <X />

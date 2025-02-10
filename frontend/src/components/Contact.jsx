@@ -247,7 +247,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-[#13677A] text-white py-3 rounded-lg hover:bg-white hover:text-[#13677A] hover:outline-1 transition font-semibold disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center"
+                className="w-full bg-[#13677A] text-white py-3 cursor-pointer rounded-lg hover:bg-white hover:text-[#13677A] hover:outline-1 transition font-semibold disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center"
                 aria-busy={isSubmitting}
               >
                 {isSubmitting ? (
