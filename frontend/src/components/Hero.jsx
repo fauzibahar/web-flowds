@@ -1,4 +1,4 @@
-import heroImage from '../assets/img/flowdsHero.svg';
+import heroImage from '../assets/img/crazeweb.png';
 const Hero = () => {
   const phoneNumber = '6282210081560';
   const message = encodeURIComponent(
@@ -9,16 +9,14 @@ const Hero = () => {
       <div className="container mx-auto px-6 md:min-h-screen  md:px-12 w-full flex flex-col lg:flex-row gap-8 items-center">
         {/* Left Content */}
         <div className="text-white text-center lg:text-left lg:w-[40%] w-full md:space-y-6 space-y-4">
-          <h1 className="text-xl md:text-xl font-bold">
-            Flow Digital Solution
-          </h1>
+          <h1 className="text-xl md:text-xl font-bold">Crazetive Digital</h1>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
             Because Digital <br /> Presence Matters
           </h1>
           <p className="text-lg font-medium text-gray-200">
             Setiap brand punya cerita. Kami mengubahnya menjadi pengalaman
-            digital yang berkesan, relevan, dan berpengaruh. Flowds hadir untuk
-            memastikan brand Anda bukan sekadar terlihat tetapi diingat.
+            digital yang berkesan, relevan, dan berpengaruh. Crazetive hadir
+            untuk memastikan brand Anda bukan sekadar terlihat tetapi diingat.
           </p>
           <a
             href={`https://wa.me/${phoneNumber}?text=${message}`}

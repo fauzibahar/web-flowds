@@ -3,7 +3,9 @@ import {
   IconHomeFilled,
   IconMailFilled,
 } from '@tabler/icons-react';
-import logoLight from '../assets/img/logo/flowdsLight.svg';
+import logoLight from '../assets/img/logo/CRAZETIVE LOGO white.png';
+import { Link } from 'react-scroll';
+import { navLinks } from '../data';
 
 const Footer = () => {
   return (
@@ -11,7 +13,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 ">
           <div className="text-white flex flex-col gap-4">
-            <img src={logoLight} alt="Logo" className="w-32" />
+            <img src={logoLight} alt="Logo" className="w-36" />
             <p className="mt-2">
               Creative agency terbaik di Indonesia, siap membantu berbagai brand
               owner meningkatkan dan mengembangkan bisnis di media sosial. Kami
@@ -22,15 +24,14 @@ const Footer = () => {
 
           <div className="text-white flex flex-col gap-4">
             <h3 className="text-xl font-semibold mb-2 ">Company</h3>
-            <p className="">Beranda</p>
-            <p className="">Tenatang Kami</p>
-            <p className="">Services</p>
-            <p className="">Portfolio</p>
-            <p className="">Kontak</p>
+            {navLinks.map((navLink, index) => (
+              <Link to={navLink.to} className="cursor-pointer" key={index}>
+                {navLink.name}
+              </Link>
+            ))}
           </div>
           <div className="text-white flex flex-col gap-4">
             <h3 className="text-xl font-semibold mb-2 ">Our Solution</h3>
-            <p className="">Web Development</p>
             <p className="">Visual Branding & Design</p>
             <p className="">Social Media Management</p>
             <p className="">Videography</p>
@@ -43,7 +44,7 @@ const Footer = () => {
               <span>
                 <IconMailFilled />
               </span>
-              flowdigitalsolution@gmail.com
+              crazetivedigital@gmail.com
             </p>
             <p className="flex items-center gap-2">
               <span>
@@ -61,7 +62,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-white mt-6 pt-6 text-center text-white ">
-          &copy; {new Date().getFullYear()} Flowds. All rights reserved.
+          &copy; {new Date().getFullYear()} Crazetive Digital All rights
+          reserved.
         </div>
       </div>
     </footer>

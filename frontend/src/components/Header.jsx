@@ -1,5 +1,5 @@
-import logoLight from '../assets/img/logo/flowdsLight.svg';
-import logoDark from '../assets/img/logo/flowdsDark.svg';
+import logoLight from '../assets/img/logo/CRAZETIVE LOGO white.png';
+import logoDark from '../assets/img/logo/CRAZETIVE LOGO.png';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
@@ -35,8 +35,7 @@ const Header = () => {
             <img
               src={header ? logoDark : logoLight}
               alt="Logo Flowds"
-              className="w-32 transition-all duration-300"
-              width="128"
+              className="w-48 transition-all duration-300"
               height="auto"
             />
           </Link>

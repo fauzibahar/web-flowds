@@ -116,7 +116,7 @@ const Contact = () => {
 
             <address className="space-y-3 mb-6 not-italic">
               <h3 className="font-semibold text-lg text-[#13677A]">
-                Kantor - Flowds
+                Kantor - Crazetive Digital
               </h3>
               <p className="text-gray-900">
                 Jl. Tapos Lbc, Ciderum, Kec. Caringin, Kabupaten Bogor, Jawa
@@ -132,7 +132,7 @@ const Contact = () => {
               <ul className="flex gap-5 mt-3">
                 <li>
                   <SocialMediaButton
-                    href="https://www.instagram.com/flowds.id/"
+                    href="https://www.instagram.com/crazetive.id/"
                     icon={<IconBrandInstagram width={32} height={32} />}
                     label="Instagram"
                   />
@@ -192,7 +192,7 @@ const Contact = () => {
 
               <FormField
                 label="Email"
-                name="Email"
+                name="email"
                 type="email"
                 placeholder="email@example.com"
                 value={formData.email}
@@ -239,7 +239,7 @@ const Contact = () => {
                   className="w-full p-3 border border-gray-700 rounded-lg focus:border-transparent placeholder-gray-900 focus:ring focus:ring-[#13677A] outline-none"
                   rows="4"
                   maxLength={1000}
-                  placeholder="Halo Flowds! Kami ingin berdiskusi lebih lanjut tentang ..."
+                  placeholder="Halo Crazetive Digital! Kami ingin berdiskusi lebih lanjut tentang ..."
                   aria-required="true"
                 />
               </div>
