@@ -90,7 +90,7 @@ const Contact = () => {
   };
 
   return (
-    <main id="contact" className="bg-[#13677A] py-16 md:py-24">
+    <main id="contact" className="bg-white py-16 md:py-24">
       <div className="container mx-auto px-6 md:px-12">
         <header>
           <h1 className="text-center text-4xl font-bold text-white mb-10">
@@ -100,33 +100,33 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Contact Information Section */}
-          <article className="bg-white p-8 rounded-xl shadow-lg">
+          <article className="bg-gray-100 p-8 rounded-xl shadow-lg">
             <header>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-2xl font-semibold text-[#13677A] mb-4">
                 Hubungi Kami
               </h2>
             </header>
 
-            <div className="text-gray-600 mb-4">
+            <div className="text-gray-900 mb-4">
               <p>
                 Kami akan sangat senang berkomunikasi untuk mengetahui dan
                 merencanakan solusi terbaik untuk setiap permasalahan Anda.
               </p>
             </div>
 
-            <address className="text-gray-700 space-y-3 mb-6 not-italic">
-              <h3 className="font-semibold text-lg text-gray-900">
-                Kantor - Billa Creative
+            <address className="space-y-3 mb-6 not-italic">
+              <h3 className="font-semibold text-lg text-[#13677A]">
+                Kantor - Flowds
               </h3>
-              <p className="text-gray-700">
-                Jl. Cendrawasih No.28A, Dayakan, Sardonoharjo, Kec. Ngaglik,
-                Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581
+              <p className="text-gray-900">
+                Jl. Tapos Lbc, Ciderum, Kec. Caringin, Kabupaten Bogor, Jawa
+                Barat 16730
               </p>
             </address>
 
             {/* Social Media Navigation */}
             <nav aria-label="Social Media Links">
-              <h3 className="font-semibold text-lg text-gray-900">
+              <h3 className="font-semibold text-lg text-[#13677A]">
                 Social Media
               </h3>
               <ul className="flex gap-5 mt-3">
@@ -149,9 +149,9 @@ const Contact = () => {
           </article>
 
           {/* Contact Form Section */}
-          <article className="bg-white p-8 rounded-xl shadow-lg">
+          <article className="bg-gray-100 p-8 rounded-xl shadow-lg">
             <header>
-              <h2 className="text-2xl font-bold mb-6 text-center text-gray-900">
+              <h2 className="text-2xl font-bold mb-6 text-center text-[#13677A]">
                 General Enquiries
               </h2>
             </header>
@@ -176,7 +176,7 @@ const Contact = () => {
               <FormField
                 label="No HP / WhatsApp"
                 name="phone"
-                type="tel"
+                type="phone"
                 placeholder="Contoh: 081234567890"
                 value={formData.phone}
                 onChange={handleChange}
@@ -192,7 +192,7 @@ const Contact = () => {
 
               <FormField
                 label="Email"
-                name="email"
+                name="Email"
                 type="email"
                 placeholder="email@example.com"
                 value={formData.email}
@@ -205,7 +205,7 @@ const Contact = () => {
               <div role="group" aria-labelledby="subject-label">
                 <label
                   id="subject-label"
-                  className="block text-gray-700 font-medium mb-1"
+                  className="block text-[#13677A] font-medium mb-1"
                 >
                   Subject
                 </label>
@@ -214,7 +214,7 @@ const Contact = () => {
                   required
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full p-3 border border-gray-500 rounded-lg focus:border-transparent focus:ring focus:ring-[#13677A] outline-none"
+                  className="w-full p-3 border border-gray-700 rounded-lg focus:border-transparent placeholder-gray-900 focus:ring focus:ring-[#13677A] outline-none"
                   aria-required="true"
                 >
                   <option value="">Pilih kategori</option>
@@ -227,7 +227,7 @@ const Contact = () => {
               <div role="group" aria-labelledby="message-label">
                 <label
                   id="message-label"
-                  className="block text-gray-700 font-medium mb-1"
+                  className="block text-[#13677A] font-medium mb-1"
                 >
                   Pesan
                 </label>
@@ -236,7 +236,7 @@ const Contact = () => {
                   required
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full p-3 border border-gray-500 rounded-lg focus:border-transparent focus:ring focus:ring-[#13677A] outline-none"
+                  className="w-full p-3 border border-gray-700 rounded-lg focus:border-transparent placeholder-gray-900 focus:ring focus:ring-[#13677A] outline-none"
                   rows="4"
                   maxLength={1000}
                   placeholder="Halo Flowds! Kami ingin berdiskusi lebih lanjut tentang ..."
@@ -247,7 +247,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-[#13677A] text-white py-3 cursor-pointer rounded-lg hover:bg-white hover:text-[#13677A] hover:outline-1 transition font-semibold disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center"
+                className="w-full bg-[#13677A] text-gray-100 py-3 cursor-pointer rounded-lg hover:bg-gray-100 hover:text-[#13677A] hover:outline-1 transition font-semibold disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center"
                 aria-busy={isSubmitting}
               >
                 {isSubmitting ? (
@@ -271,7 +271,7 @@ const SocialMediaButton = ({ href, icon, label }) => (
     target="_blank"
     rel="noopener noreferrer"
     aria-label={label}
-    className="bg-[#13677A] p-3 rounded-lg transform transition-all duration-300 hover:scale-110 hover:bg-white text-white hover:text-[#13677A] flex items-center justify-center shadow-lg hover:shadow-xl hover:outline-1"
+    className="bg-[#13677A] p-3 rounded-lg transform transition-all duration-300 hover:scale-110 hover:bg-gray-100 text-gray-100 hover:text-[#13677A] flex items-center justify-center shadow-lg hover:shadow-xl hover:outline-1"
   >
     {icon}
   </a>
@@ -291,11 +291,13 @@ const FormField = ({
   <div role="group" aria-labelledby={`${name}-label`}>
     <label
       id={`${name}-label`}
-      className="block text-gray-700 font-medium mb-1"
+      htmlFor={name}
+      className="block text-[#13677A] font-medium mb-1"
     >
       {label}
     </label>
     <input
+      id={name}
       type={type}
       name={name}
       placeholder={placeholder}
@@ -303,7 +305,7 @@ const FormField = ({
       value={value}
       onChange={onChange}
       maxLength={maxLength}
-      className="w-full p-3 border border-gray-500 rounded-lg focus:border-transparent focus:ring focus:ring-[#13677A] outline-none"
+      className="w-full p-3 border border-gray-700 rounded-lg focus:border-transparent placeholder-gray-900 focus:ring focus:ring-[#13677A] outline-none"
       {...props}
     />
   </div>

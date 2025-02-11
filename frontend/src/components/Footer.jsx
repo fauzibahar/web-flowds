@@ -1,44 +1,70 @@
-import React from 'react';
+import {
+  IconBrandWhatsappFilled,
+  IconHomeFilled,
+  IconMailFilled,
+} from '@tabler/icons-react';
+import logoLight from '../assets/img/logo/flowdsLight.svg';
 
 const Footer = () => {
   return (
-    <>
-      <footer className="bg-gray-100 py-6">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
-            <div>
-              <h3 className="text-xl font-semibold">Billa Creative</h3>
-              <p className="mt-2 text-gray-400">
-                Creative agency terbaik di Indonesia, siap membantu brand owner
-                mengembangkan bisnis di media sosial.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold">Hubungi Kami</h3>
-              <p className="mt-2 text-gray-400">
-                Informasi lengkap mengenai rate card dan promo:
-              </p>
-              <p className="text-gray-400">
-                Marketing Billa: marketing@billa.co.id
-              </p>
-              <p className="text-gray-400">Email: billacreative@gmail.com</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold">Kontak</h3>
-              <p className="mt-2 text-gray-400">WhatsApp / Call:</p>
-              <p className="text-gray-400">Winky: +62 821-3768-6727</p>
-              <p className="text-gray-400">Dilla: +62 813-8301-6898</p>
-              <p className="text-gray-400">Viana: +62 858-6952-9923</p>
-            </div>
+    <footer className="bg-[#13677A] py-8 md:py-10">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 ">
+          <div className="text-white flex flex-col gap-4">
+            <img src={logoLight} alt="Logo" className="w-32" />
+            <p className="mt-2">
+              Creative agency terbaik di Indonesia, siap membantu berbagai brand
+              owner meningkatkan dan mengembangkan bisnis di media sosial. Kami
+              memiliki berbagai layanan unggulan serta team yang berkompeten,
+              profesional dan berpengalaman di dunia Creative Digital.
+            </p>
+          </div>
+
+          <div className="text-white flex flex-col gap-4">
+            <h3 className="text-xl font-semibold mb-2 ">Company</h3>
+            <p className="">Beranda</p>
+            <p className="">Tenatang Kami</p>
+            <p className="">Services</p>
+            <p className="">Portfolio</p>
+            <p className="">Kontak</p>
+          </div>
+          <div className="text-white flex flex-col gap-4">
+            <h3 className="text-xl font-semibold mb-2 ">Our Solution</h3>
+            <p className="">Web Development</p>
+            <p className="">Visual Branding & Design</p>
+            <p className="">Social Media Management</p>
+            <p className="">Videography</p>
+            <p className="">Photography</p>
+          </div>
+
+          <div className="text-white flex flex-col gap-4">
+            <h3 className="text-xl font-semibold mb-2 ">Hubungi Kami</h3>
+            <p className="flex items-center gap-2">
+              <span>
+                <IconMailFilled />
+              </span>
+              flowdigitalsolution@gmail.com
+            </p>
+            <p className="flex items-center gap-2">
+              <span>
+                <IconBrandWhatsappFilled />
+              </span>
+              (+62) 822-1008-1560
+            </p>
+            <p className="flex items-center gap-2">
+              <span>
+                <IconHomeFilled />
+              </span>
+              Jl. Tapos Lbc, Ciderum, Kec. Caringin, Kabupaten Bogor, Jawa Barat
+              16730
+            </p>
           </div>
         </div>
-      </footer>
-      <div className="bg-[#13677A]">
-        <div className="text-center bg-[#13677A] text-white ">
-          © 2024 Billa Creative - PT. Billa Corp Indonesia
+        <div className="border-t border-white mt-6 pt-6 text-center text-white ">
+          &copy; {new Date().getFullYear()} Flowds. All rights reserved.
         </div>
       </div>
-    </>
+    </footer>
   );
 };
 
