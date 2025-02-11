@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#13677A] py-8 md:py-10">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 ">
           <div className="text-white flex flex-col gap-4">
             <img src={logoLight} alt="Logo" className="w-32" />
             <p className="mt-2">

@@ -93,7 +93,7 @@ const Contact = () => {
     <main id="contact" className="bg-white py-16 md:py-24">
       <div className="container mx-auto px-6 md:px-12">
         <header>
-          <h1 className="text-center text-4xl font-bold text-white mb-10">
+          <h1 className="text-center text-4xl font-bold text-gray-800 mb-10">
             Contact Us
           </h1>
         </header>
