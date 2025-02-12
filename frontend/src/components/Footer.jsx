@@ -6,6 +6,7 @@ import {
 import logoLight from '../assets/img/logo/CRAZETIVE LOGO white.png';
 import { Link } from 'react-scroll';
 import { navLinks } from '../data';
+import { services } from '../data';
 
 const Footer = () => {
   return (
@@ -32,10 +33,11 @@ const Footer = () => {
           </div>
           <div className="text-white flex flex-col gap-4">
             <h3 className="text-xl font-semibold mb-2 ">Our Solution</h3>
-            <p className="">Visual Branding & Design</p>
-            <p className="">Social Media Management</p>
-            <p className="">Videography</p>
-            <p className="">Photography</p>
+            {services.map((service, index) => (
+              <p key={index} className="">
+                {service.title}
+              </p>
+            ))}
           </div>
 
           <div className="text-white flex flex-col gap-4">
