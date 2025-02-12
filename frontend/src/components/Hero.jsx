@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import heroImage from '../assets/img/crazeweb.png';
 const Hero = () => {
   const phoneNumber = '6282210081560';
@@ -18,14 +19,14 @@ const Hero = () => {
             digital yang berkesan, relevan, dan berpengaruh. Crazetive hadir
             untuk memastikan brand Anda bukan sekadar terlihat tetapi diingat.
           </p>
-          <a
-            href={`https://wa.me/${phoneNumber}?text=${message}`}
+          <Link
+            to={`https://wa.me/${phoneNumber}?text=${message}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-[#13677A] font-bold text-base py-2 px-4 md:text-lg md:py-4 md:px-6 rounded-lg hover:bg-[#13677A] hover:text-white hover:outline-1"
           >
             Konsultasi Sekarang
-          </a>
+          </Link>
         </div>
 
         {/* Right Content */}

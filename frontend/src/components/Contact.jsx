@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import { IconBrandInstagram, IconBrandFacebook } from '@tabler/icons-react';
 import { Bounce, toast } from 'react-toastify';
 import { LoaderCircle } from 'lucide-react';
+import { Link } from 'react-router';
 
 // Konstanta dari environment variable
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -139,7 +140,7 @@ const Contact = () => {
                 </li>
                 <li>
                   <SocialMediaButton
-                    href="https://www.facebook.com/flowds.id"
+                    href="https://www.facebook.com/profile.php?id=61572922838758"
                     icon={<IconBrandFacebook width={32} height={32} />}
                     label="Facebook"
                   />
@@ -266,15 +267,15 @@ const Contact = () => {
 
 // Components
 const SocialMediaButton = ({ href, icon, label }) => (
-  <a
-    href={href}
+  <Link
+    to={href}
     target="_blank"
     rel="noopener noreferrer"
     aria-label={label}
     className="bg-[#13677A] p-3 rounded-lg transform transition-all duration-300 hover:scale-110 hover:bg-gray-100 text-gray-100 hover:text-[#13677A] flex items-center justify-center shadow-lg hover:shadow-xl hover:outline-1"
   >
     {icon}
-  </a>
+  </Link>
 );
 
 const FormField = ({

@@ -1,4 +1,5 @@
 import { clients } from '../data';
+import { Link } from 'react-router';
 
 const Client = () => {
   const phoneNumber = '6282210081560';
@@ -16,14 +17,14 @@ const Client = () => {
             Saatnya membawa brand Anda lebih jauh dan lebih dikenal!
           </h1>
           <div className="text-center">
-            <a
-              href={`https://wa.me/${phoneNumber}?text=${message}`}
+            <Link
+              to={`https://wa.me/${phoneNumber}?text=${message}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#13677A] text-white font-bold text-base py-2 px-4 md:text-lg md:py-4 md:px-6 rounded-lg mt-6 hover:bg-white hover:outline-1 hover:text-[#13677A]"
             >
               Konsultasi Gratis!
-            </a>
+            </Link>
           </div>
         </div>
         <h1 className="text-center text-2xl font-bold text-gray-800 mb-10">
