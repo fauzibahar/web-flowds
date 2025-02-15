@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
-import heroImage from '../assets/img/crazeweb.png';
+import heroImage from '/public/crazeweb.png';
+
 const Hero = () => {
   const phoneNumber = '6282210081560';
   const message = encodeURIComponent(
@@ -7,7 +8,7 @@ const Hero = () => {
   );
   return (
     <section id="home" className="bg-[#13677A] py-24 lg:py-0">
-      <div className="container mx-auto px-6 md:min-h-screen  md:px-12 w-full flex flex-col lg:flex-row gap-8 items-center">
+      <div className="container mx-auto px-6 md:min-h-screen md:px-12 w-full flex flex-col lg:flex-row gap-8 items-center">
         {/* Left Content */}
         <div className="text-white text-center lg:text-left lg:w-[40%] w-full md:space-y-6 space-y-4">
           <h1 className="text-xl md:text-xl font-bold">Crazetive Digital</h1>
@@ -33,7 +34,7 @@ const Hero = () => {
         <div className="flex justify-end lg:w-[60%] w-full">
           <img
             src={heroImage}
-            alt="Team Meeting"
+            alt="Hero Image of Crazetive Digital"
             className="w-full"
             style={{ filter: 'drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.20))' }}
           />

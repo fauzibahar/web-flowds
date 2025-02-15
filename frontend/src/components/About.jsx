@@ -1,5 +1,3 @@
-import React from 'react';
-
 const About = () => {
   return (
     <section id="tentang-kami" className="py-18 md:py-24">

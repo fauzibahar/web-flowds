@@ -5,15 +5,22 @@ import App from './App.jsx';
 import { ToastContainer } from 'react-toastify';
 import { BrowserRouter, Routes, Route } from 'react-router';
 import LinkMedSosPage from './pages/LinkMedSosPage.jsx';
+import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
+import { HelmetProvider } from 'react-helmet-async';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/linkmedsos" element={<LinkMedSosPage />} />
-      </Routes>
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/linkmedsos" element={<LinkMedSosPage />} />
+        </Routes>
+      </BrowserRouter>
+    </HelmetProvider>
     <ToastContainer />
+    <SpeedInsights />
+    <Analytics />
   </StrictMode>
 );
