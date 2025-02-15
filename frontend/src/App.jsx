@@ -18,7 +18,7 @@ function App() {
         <title>Crazetive Digital | Web Development & Jasa Digital</title>
         <meta
           name="google-site-verification"
-          content="mq-MMHDD8uvhK52kPCUL4M5kwsxwK0oDQksDXWfZbSs"
+          content="Ov3cchzvKHki7VD55OsGylo6Q4LJeXlfkyEVnu3BKpU"
         />
         <meta
           name="keywords"
