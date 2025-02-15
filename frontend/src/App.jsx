@@ -17,18 +17,12 @@ function App() {
         {/* SEO Meta Tags */}
         <title>Crazetive Digital | Web Development & Jasa Digital</title>
         <meta
+          name="google-site-verification"
+          content="mq-MMHDD8uvhK52kPCUL4M5kwsxwK0oDQksDXWfZbSs"
+        />
+        <meta
           name="keywords"
-          content="
-    jasa pembuatan website profesional, jasa web developer Bogor, jasa website murah dan berkualitas, 
-    bikin website toko online, pembuatan website perusahaan, jasa desain logo profesional, 
-    branding bisnis online, jasa desain grafis murah, desain identitas brand, 
-    pembuatan kartu nama & brosur, jasa kelola Instagram bisnis, jasa social media marketing, 
-    cara meningkatkan engagement Instagram, strategi pemasaran digital, jasa content creator Instagram, 
-    jasa video promosi bisnis, jasa editing video profesional, jasa video company profile, 
-    produksi video marketing, jasa pembuatan iklan video, jasa foto produk profesional, 
-    fotografer produk UMKM, jasa foto katalog bisnis, jasa fotografi untuk branding, 
-    foto produk untuk marketplace
-  "
+          content="jasa pembuatan website, jasa web developer Bogor, branding bisnis online, social media management, jasa desain grafis, jasa foto produk, videografi bisnis, strategi pemasaran digital"
         />
         <meta
           name="description"
@@ -47,14 +41,16 @@ function App() {
         />
         <meta
           property="og:image"
-          content="https://crazetive.vercel.app/public/crazeweb.png"
+          content="https://crazetive.vercel.app/crazeweb.png"
         />
         <meta property="og:url" content="https://crazetive.vercel.app/" />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Crazetive Digital" />
 
         {/* Meta Tags Tambahan untuk Mobile & Indexing */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Crazetive Digital" />
+        <link rel="canonical" href="https://crazetive.vercel.app/" />
       </Helmet>
       <Header />
       <HomePage />
