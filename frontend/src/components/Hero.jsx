@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import heroImage from '/public/crazeweb.png';
+import heroImage from '/crazetive-hero-image.png';
 
 const Hero = () => {
   const phoneNumber = '6282210081560';

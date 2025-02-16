@@ -51,6 +51,24 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Crazetive Digital" />
         <link rel="canonical" href="https://crazetive.vercel.app/" />
+
+        {/* Favicon */}
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="https://crazetive.vercel.app/crazetive-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="https://crazetive.vercel.app/crazetive-icon.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="https://crazetive.vercel.app/crazetive-icon.png"
+        />
       </Helmet>
       <Header />
       <HomePage />
