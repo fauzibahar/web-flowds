@@ -41,33 +41,33 @@ function App() {
         />
         <meta
           property="og:image"
-          content="https://crazetive.vercel.app/crazeweb.png"
+          content="https://crazetive.com/crazeweb.png"
         />
-        <meta property="og:url" content="https://crazetive.vercel.app/" />
+        <meta property="og:url" content="https://crazetive.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Crazetive Digital" />
 
         {/* Meta Tags Tambahan untuk Mobile & Indexing */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Crazetive Digital" />
-        <link rel="canonical" href="https://crazetive.vercel.app/" />
+        <link rel="canonical" href="https://crazetive.com/" />
 
         {/* Favicon */}
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="https://crazetive.vercel.app/crazetive-icon.png"
+          href="https://crazetive.com/crazetive-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="https://crazetive.vercel.app/crazetive-icon.png"
+          href="https://crazetive.com/crazetive-icon.png"
         />
         <link
           rel="apple-touch-icon"
-          href="https://crazetive.vercel.app/crazetive-icon.png"
+          href="https://crazetive.com/crazetive-icon.png"
         />
       </Helmet>
       <Header />
