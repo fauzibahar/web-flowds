@@ -17,10 +17,6 @@ function App() {
         {/* SEO Meta Tags */}
         <title>Crazetive Digital | Web Development & Jasa Digital</title>
         <meta
-          name="google-site-verification"
-          content="Ov3cchzvKHki7VD55OsGylo6Q4LJeXlfkyEVnu3BKpU"
-        />
-        <meta
           name="keywords"
           content="jasa pembuatan website, jasa web developer Bogor, branding bisnis online, social media management, jasa desain grafis, jasa foto produk, videografi bisnis, strategi pemasaran digital"
         />
