@@ -15,7 +15,7 @@ createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/linkmedsos" element={<LinkMedSosPage />} />
+          <Route path="/mediasosial" element={<LinkMedSosPage />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
