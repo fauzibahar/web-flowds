@@ -45,7 +45,7 @@ const LinkMedSosPage = () => {
           Facebook
         </Link>
         <Link
-          to="https://crazetive.vercel.app/"
+          to="https://www.crazetive.com/"
           target="_blank"
           className="flex items-center gap-2 bg-[#13677A] px-6 py-3 rounded-full font-semibold hover:bg-[#0F4D56] transition shadow-lg shadow-[#13677A]/50 w-full sm:w-auto justify-center"
         >
