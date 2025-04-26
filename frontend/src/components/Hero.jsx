@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="text-white text-center lg:text-left lg:w-[40%] w-full md:space-y-6 space-y-4">
           <h1 className="text-xl md:text-xl font-bold">Crazetive Digital</h1>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-            Because Digital <br /> Presence Matters
+            Bringing Brands To  <br /> Life Through Creativity
           </h1>
           <p className="text-lg font-medium text-gray-200">
             Setiap brand punya cerita. Kami mengubahnya menjadi pengalaman
