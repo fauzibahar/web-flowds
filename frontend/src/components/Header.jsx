@@ -1,7 +1,6 @@
 import logoLight from '../assets/img/logo/CRAZETIVE LOGO white.png';
 import logoDark from '../assets/img/logo/CRAZETIVE LOGO.png';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
 import { navLinks } from '../data';
 
@@ -30,9 +29,8 @@ const Header = () => {
     >
       <div className="container mx-auto py-6 px-6 md:px-12 h-full flex items-center justify-between">
         {/* Logo */}
-        <div className="cursor-pointer">
-          <a href="#about" 
-    aria-label="Navigate to homepage">
+        
+          <a href="#home" aria-label="Navigate to homepage" className="cursor-pointer">
             <img
               src={header ? logoDark : logoLight}
               alt="Logo Flowds"
@@ -40,7 +38,7 @@ const Header = () => {
               height="auto"
             />
           </a>
-        </div>
+        
 
         {/* Navigation */}
         <nav role="navigation" aria-label="Main navigation">
@@ -85,10 +83,8 @@ const Header = () => {
             >
               {navLinks.map((navLink, index) => (
                 <li key={index} className="relative group" role="none">
-                  <Link
-                    to={navLink.to}
-                    smooth={true}
-                    duration={500}
+                  <a
+                  href={navLink.to}
                     onClick={() => setIsOpen(false)}
                     className={`cursor-pointer pb-2 transition duration-300 text-base ${
                       header ? ' text-white' : 'text-[#13677A]'
@@ -103,7 +99,7 @@ const Header = () => {
                       } group-hover:w-full`}
                       aria-hidden="true"
                     />
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -114,10 +110,8 @@ const Header = () => {
             <ul className="flex items-center gap-4" role="menubar">
               {navLinks.map((navLink, index) => (
                 <li key={index} className="relative group" role="none">
-                  <Link
-                    to={navLink.to}
-                    smooth={true}
-                    duration={500}
+                  <a
+                    href={navLink.to}
                     className={`cursor-pointer pb-2 transition duration-300 md:text-lg md:font-normal ${
                       header ? 'text-[#13677A]' : 'text-white'
                     }`}
@@ -131,7 +125,7 @@ const Header = () => {
                       } group-hover:w-full`}
                       aria-hidden="true"
                     />
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>

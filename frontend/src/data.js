@@ -134,9 +134,9 @@ export const clients = [
 ];
 
 export const navLinks = [
-  { name: 'Beranda', to: 'home' },
-  { name: 'Tentang Kami', to: 'tentang-kami' },
-  { name: 'Services', to: 'services' },
-  { name: 'Portfolio', to: 'portfolio' },
-  { name: 'Kontak', to: 'contact' },
+  { name: 'Beranda', to: '#home' },
+  { name: 'Tentang Kami', to: '#tentang-kami' },
+  { name: 'Services', to: '#services' },
+  { name: 'Portfolio', to: '#portfolio' },
+  { name: 'Kontak', to: '#contact' },
 ];
