@@ -30,7 +30,7 @@ const Header = () => {
     >
       <div className="container mx-auto py-6 px-6 md:px-12 h-full flex items-center justify-between">
         {/* Logo */}
-        <div className="logo-wrapper">
+        <div className="cursor-pointer">
           <Link to="home" aria-label="Navigate to homepage">
             <img
               src={header ? logoDark : logoLight}
